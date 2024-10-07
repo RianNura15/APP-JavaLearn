@@ -6,12 +6,12 @@ import codeImage from '../Images/code.png';
 
 <template>
     <Head title="Welcome" />
-    <header class="bg-white bg-opacity-60 backdrop-blur-sm shadow-md inset-x-0 top-10 mr-[22px] ml-[22px] rounded-[30px] flex items-center z-[9999] fixed
+    <header class="bg-dark bg-opacity-60 backdrop-blur-sm shadow-md shadow-primary inset-x-0 top-10 mr-[22px] ml-[22px] rounded-[30px] flex items-center z-[9999] fixed
     lg:mx-[100px]">
         <div class="container">
             <div class="flex items-center justify-between relative">
                 <div class="px-4 ml-[20px]">
-                    <a href="" class="font-mono font-bold text-lg text-primary block py-6">JavaLearn</a>
+                    <span  class="font-mono font-bold text-lg text-primary block py-6">JavaLearn</span>
                 </div>
                 <div class="flex items-center px-4">
                     <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
@@ -23,8 +23,8 @@ import codeImage from '../Images/code.png';
                         class="hidden absolute py-5 bg-white bg-opacity-95 backdrop-blur-3xl shadow-lg rounded-lg max-w-[500px] w-full right-0 top-20 lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none lg:bg-opacity-0 lg:backdrop-blur-none">
                         <ul class="block lg:flex">
                             <li class="group">
-                                <a href="#skills"
-                                    class="nav-link text-base font-mono font-semibold text-dark py-3.5 flex mb-2 relative
+                                <a :href="routeRegis"
+                                    class="nav-link text-base font-mono font-semibold text-white py-3.5 flex mb-2 relative
                                     lg:mx-8 lg:mb-0 lg:py-2
                                     group-hover:text-primary">
                                     <span class="
@@ -34,11 +34,11 @@ import codeImage from '../Images/code.png';
                                 </a>
                             </li>
                             <li class="group">
-                                <span class="text-base font-mono font-semibold text-dark mt-2 flex">|</span>
+                                <span class="text-base font-mono font-semibold text-white mt-2 flex">|</span>
                             </li>
                             <li class="group">
-                                <a href="#portofolio"
-                                    class="nav-link text-base font-mono font-semibold text-dark py-3.5 flex mb-2 relative
+                                <a :href="routeLogin"
+                                    class="nav-link text-base font-mono font-semibold text-white py-3.5 flex mb-2 relative
                                     lg:mx-8 lg:mb-0 lg:py-2
                                     group-hover:text-primary">
                                     <span class="
@@ -73,3 +73,14 @@ import codeImage from '../Images/code.png';
         </div>
     </section>
 </template>
+
+<script>
+    export default {
+        data() {
+            return {
+                routeLogin: '/login',
+                routeRegis: '/registrasi'
+            };
+        }
+    }
+</script>

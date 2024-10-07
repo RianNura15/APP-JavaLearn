@@ -7,17 +7,13 @@ use Inertia\Inertia;
 
 class UserController extends Controller
 {
-    public function show()
+    public function login()
     {
-        return Inertia::render('User', [
-          'user' => 'Rian Nura'
-        ]);
+        return Inertia::render('Login');
     }
     
-    public function detail()
+    public function registrasi()
     {
-        return Inertia::render('Detail', [
-          'user' => 'Rinz'
-        ]);
+        return Inertia::render('Registrasi');
     }
 }

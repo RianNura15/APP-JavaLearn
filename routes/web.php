@@ -14,5 +14,5 @@ Route::get('/coba', function () {
 });
 
 Route::get('/coba2', [CobaController::class, 'show']);
-Route::get('/user', [UserController::class, 'show']);
-Route::get('/detail', [UserController::class, 'detail']);
+Route::get('/login', [UserController::class, 'login']);
+Route::get('/registrasi', [UserController::class, 'registrasi']);
