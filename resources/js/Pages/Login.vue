@@ -12,10 +12,6 @@ import nasaImage from '../Images/nasa.jpg';
                     <p class="font-mono text-white font-bold text-2xl mb-6">Login</p>
                     <p class="font-mono text-white text-[14px] mb-6">Masukkan Email dan Password dengan Benar!</p>
                     <div class="w-full mb-4">
-                        <label for="nama" class="block text-white font-mono mb-1">Nama:</label>
-                        <input type="text" id="nama" v-model="text" class="w-full font-mono py-2 px-3 rounded-lg bg-transparent border-b-2 outline-none hover:outline-primary text-primary">
-                    </div>
-                    <div class="w-full mb-4">
                         <label for="email" class="block text-white font-mono mb-1">Email:</label>
                         <input type="email" id="email" v-model="email" class="w-full font-mono py-2 px-3 rounded-lg bg-transparent border-b-2 outline-none hover:outline-primary text-primary">
                     </div>
