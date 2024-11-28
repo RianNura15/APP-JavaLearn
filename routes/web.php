@@ -16,3 +16,7 @@ Route::get('/coba', function () {
 Route::get('/coba2', [CobaController::class, 'show']);
 Route::get('/login', [UserController::class, 'login']);
 Route::get('/registrasi', [UserController::class, 'registrasi']);
+
+Route::get('/dashboard', function () {
+    return Inertia::render('Admin/Dashboard');
+});
